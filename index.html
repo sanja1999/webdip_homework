@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="hr">
+    <head>
+        <title>Početna stranica</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="tittle" content="Početna stranica">
+        <meta name="description" content="Stranica o vlakovima">
+        <meta name="keywords" content="Vlakovi; HŽ željeznice; Sanja Šajfar">
+        <meta name="author" content="Sanja Šajfar">
+        <meta name="date" content="30 Ožujak 2021.">
+        <link rel="stylesheet" href="css/ssajfar.css" type="text/css"/>   
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+        <script src="javascript/ssajfar_jquery.js"></script>
+    </head>
+
+    <body>
+        <header class="header">
+
+            <div class="header__inner">
+                <a href="index.html" class="header__logo-container">
+                    <img src="multimedija/Logo.jpg" alt="logo" class="header__logo"></a>
+                <nav id="header__nav">
+                    <ul>
+                        <li class=header__nav-item>    <a href="index.html">POČETNA STRANICA</a> </li>
+                        <li class=header__nav-item>    <a href="autor.html">O AUTORICI</a> </li>
+                        <li class=header__nav-item>    <a href="galerija.html">GALERIJA VLAKOVA</a> </li>
+                        <li class=header__nav-item>    <a href="obrasci/prijava.html">PRIJAVA</a> </li>
+                        <li class=header__nav-item>    <a href="obrasci/registracija.html">REGISTRACIJA</a> </li>
+                        <li class=header__nav-item>    <a href="obrasci/obrazac.html">OBRAZAC</a> </li>
+                        <li class=header__nav-item>    <a href="ostalo/era.html">ERA MODEL</a> </li>
+                        <li class=header__nav-item>    <a href="ostalo/navigacijski.html">NAVIGACIJSKI DIJAGRAM</a> </li>
+                    </ul>
+                </nav>
+                <span class="header__social-media-container"> 
+                    <a href="#">
+                        <img src="multimedija/facebook-2.png" alt="header__social-media-image" class="header__social-media-image">
+                    </a>
+                </span>
+
+
+                <span class="header__social-media-container"> 
+                    <a href="#">
+                        <img src="multimedija/twitter.png" alt="header__social-media-image" class="header__social-media-image">
+                    </a>
+                </span>
+
+                <span class="header__social-media-container"> 
+                    <a href="#">
+                        <img src="multimedija/rss.png" alt="header__social-media-image" class="header__social-media-image">
+                    </a>
+                </span>
+                <a href="#section-hero"><h1 class="header__title"> Početna stranica </h1></a>   
+            </div>
+        </header>
+
+
+
+
+
+        
+        <section id="section-hero" class="section-hero">
+            <h2>Tablica</h2>
+
+
+
+            <!-- Tablica sada, za spajanje dva stupca je <td colspan="2"/td>  -->
+            <!-- u tablici se imena stupaca podudaraju sa poljima obrasca html>  -->
+            <table id="tablica" class="tablica">
+                <thead>
+                    <tr class="tablica1">
+                        <th>Vrsta pogona</th>
+                        <th>Vrsta vlaka</th>
+                        <th>Boja</th>
+                        <th>Prijeđeni kilometri</th>
+                        <th>Registrirano do</th>
+                        <th>Očuvanost</th>
+                        <th>Broj telefona</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tablica2">
+                        <!-- <td rowspan="2">Parni pogon</td> -->
+                        <td>Parni pogon</td>
+                        <td>Putnički</td>
+                        <td>Crna</td>
+                        <td>150 000</td>
+                        <td>30.6.2021.</td>
+                        <td>10</td>
+                        <!-- <td colspan="2">+385-91-123-4567 mail1@gmail.com</td>
+                        <td style="display: none;"></td> -->
+                        <td>+385-91-123-4567</td>
+                        <td>mail1@gmail.com</td>
+
+                    </tr>
+                    <tr class="tablica1">
+                        <!-- <td style="display: none;"></td> -->
+                        <td>Parni pogon</td>
+                        <td>Teretni</td>
+                        <td>Crveni</td>
+                        <td>100 000</td>
+                        <td>15.10.2021.</td>
+                        <td>7</td>
+                        <td>+385-91-195-4357</td>
+                        <td>mail2@gmail.com</td>
+                    </tr>
+                    <tr class="tablica2">
+                        <td>Dizelski</td>
+                        <td>Putničko-teretni</td>
+                        <td>Plavi</td>
+                        <td>500 000</td>
+                        <td>9.12.2021.</td>
+                        <td>6</td>
+                        <td>+385-91-195-1654</td>
+                        <td>mail3@gmail.com</td>
+                    </tr>
+                    <tr class="tablica1">
+                        <td>Plinsko-turbinski</td>
+                        <td>Putnički</td>
+                        <td>Zeleni</td>
+                        <td>450 000</td>
+                        <td>8.1.2022.</td>
+                        <td>9</td>
+                        <td>+385-95-285-1294</td>
+                        <td>mail4@gmail.com</td>
+                    </tr>
+
+                    <tr class="tablica2">
+                        <td>Maglev vlak</td>
+                        <td>Teretni</td>
+                        <td>Crveni</td>
+                        <td>1 285 000</td>
+                        <td>17.3.2022.</td>
+                        <td>8</td>
+                        <td>+385-99-184-1345</td>
+                        <td>mail5@gmail.com</td>
+                    </tr>
+                    <tr class="tablica1">
+                        <td>Parni pogon</td>
+                        <td>Putnički</td>
+                        <td>Bijeli</td>
+                        <td>2 100 500</td>
+                        <td>1.2.2022.</td>
+                        <td>7</td>
+                        <td>+385-92-244-5345</td>
+                        <td>mail6@gmail.com</td>
+                    </tr>
+
+                    <tr class="tablica2">
+                        <td>Električni pogon</td>
+                        <td>Putničko-teretni</td>
+                        <td>Crni</td>
+                        <td>3 200 100</td>
+                        <td>25.7.2021.</td>
+                        <td>9</td>
+                        <td>+385-97-434-5665</td>
+                        <td>mail7@gmail.com</td>
+                    </tr>
+                </tbody>
+                <tfoot class="tablica1">
+                    <tr class="tablica1_podnozje">
+                        <td colspan="8">-</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-description">
+                <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2020%2Fzadaca_03%2Fssajfar%2Findex.html">
+                    <img src="multimedija/HTML5.png" alt="HTML5" width="50" height="50"> </a>
+                <a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2020%2Fzadaca_03%2Fssajfar%2Fcss%2Fssajfar.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+                    <img src="multimedija/CSS3.png" alt="CSS3" width="50" height="50"> </a>
+                <p>&copy; 2021. <a href="autor.html">Sanja Šajfar</a></p>
+            </div>
+        </footer >
+    </body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="hr">
+
+<head>
+    <title>Obrazac</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="tittle" content="Obrazac">
+    <meta name="description" content="Obrazac za vlak">
+    <meta name="keywords" content="Vlakovi; Obrazac; Vlak">
+    <meta name="author" content="Sanja Šajfar">
+    <meta name="date" content="30. Ožujak 2021.">
+    <link rel="stylesheet" href="../css/ssajfar.css" type="text/css" />
+    <link rel="stylesheet" href="../css/ssajfar_accesibility.css" type="text/css" id="accessibility-style"/>
+
+
+    <script src="../javascript/ssajfar.js"></script>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="header__inner">
+            <a href="index.html" class="header__logo-container">
+                <img src="../multimedija/Logo.jpg" alt="logo" class="header__logo"></a>
+            <nav id="header__nav">
+                <ul>
+                    <li class=header__nav-item> <a href="../index.html">POČETNA STRANICA</a> </li>
+                    <li class=header__nav-item> <a href="../autor.html">O AUTORICI</a> </li>
+                    <li class=header__nav-item> <a href="../galerija.html">GALERIJA VLAKOVA</a> </li>
+                    <li class=header__nav-item> <a href="../obrasci/prijava.html">PRIJAVA</a> </li>
+                    <li class=header__nav-item> <a href="../obrasci/registracija.html">REGISTRACIJA</a> </li>
+                    <li class=header__nav-item> <a href="../ostalo/era.html">ERA MODEL</a> </li>
+                    <li class=header__nav-item> <a href="../ostalo/navigacijski.html">NAVIGACIJSKI DIJAGRAM</a> </li>
+                </ul>
+            </nav>
+            <span class="header__social-media-container">
+                <a href="#">
+                    <img src="../multimedija/facebook-2.png" alt="header__social-media-image"
+                        class="header__social-media-image">
+                </a>
+            </span>
+
+
+            <span class="header__social-media-container">
+                <a href="#">
+                    <img src="../multimedija/twitter.png" alt="header__social-media-image"
+                        class="header__social-media-image">
+                </a>
+            </span>
+
+            <span class="header__social-media-container">
+                <a href="#">
+                    <img src="../multimedija/rss.png" alt="header__social-media-image"
+                        class="header__social-media-image">
+                </a>
+            </span>
+            <span class="header__social-media-container" id="accessibility">
+                
+                    <img src="../multimedija/accessibility.png" alt="header__social-media-image"
+                        class="header__social-media-image">
+                
+            </span>
+            <a href="#section-hero">
+                <h1 class="header__title">Obrazac za kreiranje vlaka</h1>
+            </a>
+        </div>
+    </header>
+
+
+    <section id="section-hero" class="section-hero">
+        <h2>Obrazac</h2>
+        <div id="pravokutnik" class="pravokutnik">
+            Kliknite za pojašnjenje pojedinih elemenata obrazca.
+        </div>
+        <form id="form1" method="post" name="form1"
+            action="http://barka.foi.hr/WebDiP/2020/materijali/zadace/ispis_forme.php">
+
+            <fieldset>
+                <legend>Vrsta pogona:</legend>
+                <label for="parni">Parni pogon</label>
+                <input type="radio" name="gender" value="parni" id="parni"><br>
+                <label for="dizelski">Dizelski pogon</label>
+                <input type="radio" name="gender" value="dizelski" id="dizelski"><br>
+                <label for="elektricni">Električni</label>
+                <input type="radio" name="gender" value="elektricni" id="elektricni"><br>
+                <label for="plin">Plinsko-turbinski</label>
+                <input type="radio" name="gender" value="plin" checked="checked" id="plin"><br>
+                <label for="maglev">Maglev vlak</label>
+                <input type="radio" name="gender" value="maglev" id="maglev"><br>
+                <label for="motorni">Motorni s nagibnim mehanizmom</label>
+                <input type="radio" name="gender" value="motorni" id="motorni"><br>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Osnovne informacije</legend>
+               
+                <label for="pogon">Vrsta vlaka</label> 
+                <select name="pogon" id="pogon">
+                    <option value="putnicki">Putnički </option>
+                    <option value="teretni">Teretni</option>
+                    <option value="infrastruktura">Vlakovi za potrebe upravitelja infrastrukture</option>
+                    <option value="kombinirano">Kombinirano putničko teretni</option>
+                </select>
+                <p id="pravokutnik1" class="pravokutnik" hidden="hidden">
+                    Odaberiti koju vrstu vlaka prema osnovnoj podijeli želite izabrati.
+                </p>
+                <br>
+                <label for="boja">Boja</label>
+                <input type="color" id="boja" name="boja"><br>
+
+
+                <div id="pravokutnik2" class="pravokutnik" hidden="hidden">
+                    Napišite brojačno koliko kilometra je vlak prošao.
+                </div>
+
+                <label for="kilometri">Prijeđeni kilometri</label>
+                <input type="number" name="kilometri" id="kilometri" placeholder="kilometri" min="0" max="500000"
+                    step="10000"><br>
+                <label for="ocuvanost">Očuvanost</label>
+                <input type="range" name="ocuvanost" id="ocuvanost" min="0" max="10"><br>
+                <label for="registrirano" id="registriranoLabela">Registrirano do</label>
+                <input type="text" name="registrirano" id="registrirano"><br>
+                <label for="datoteka">Dodaj slike: </label>
+                <input type="file" name="datoteka" id="datoteka"><br>
+
+                <p id="pravokutnik3" class="pravokutnik" hidden="hidden">
+                    Odaberite u kojim županijama se vlak kreće 
+                    (1 ili više županija). 
+                </p>
+                <label for="zupanija" id="zupanijaLabela">Županije u kojoj se bude kretao: </label>
+                <select multiple="multiple" id="zupanija">
+                    <option value="-1" selected="selected">== Odaberi županiju ==</option>
+                    <optgroup label="Sjeverna Hrvatska">
+                        <option value="1000007">BJELOVARSKO-BILOGORSKA</option>
+                        <option value="1000006">KOPRIVNIČKO-KRIŽEVAČKA</option>
+                        <option value="1000002">KRAPINSKO-ZAGORSKA</option>
+                        <option value="1000020">MEĐIMURSKA</option>
+                        <option value="1000005">VARAŽDINSKA</option>
+                    </optgroup>
+                    <optgroup label="Središnja Hrvatska">
+                        <option value="1000022">GRAD ZAGREB</option>
+                        <option value="1000004">KARLOVAČKA</option>
+                        <option value="1000003">SISAČKO-MOSLAVAČKA</option>
+                        <option value="1000001">ZAGREBAČKA</option>
+                    </optgroup>
+                    <optgroup label="Zapadna Hrvatska">
+                        <option value="1000018">ISTARSKA</option>
+                        <option value="1000009">LIČKO-SENJSKA</option>
+                        <option value="1000008">PRIMORSKO-GORANSKA</option>
+                    </optgroup>
+                    <optgroup label="Istočna Hrvatska">
+                        <option value="1000012">BRODSKO-POSAVSKA</option>
+                        <option value="1000014">OSJEČKO-BARANJSKA</option>
+                        <option value="1000011">POŽEŠKO-SLAVONSKA</option>
+                        <option value="1000010">VIROVITIČKO-PODRAVSKA</option>
+                        <option value="1000016">VUKOVARSKO-SRIJEMSKA</option>
+                    </optgroup>
+                    <optgroup label="Južna Hrvatska">
+                        <option value="1000019">DUBROVAČKO-NERETVANSKA</option>
+                        <option value="1000015">ŠIBENSKO-KNINSKA</option>
+                        <option value="1000017">SPLITSKO-DALMATINSKA</option>
+                        <option value="1000013">ZADARSKA</option>
+                    </optgroup>
+                </select><br>
+
+            </fieldset>
+            <fieldset>
+                <legend>Dodatne informacije</legend>
+                <label for="vrijeme">Vrijeme: </label>
+                <input type="time" id="vrijeme" name="vrijeme" required="required"><br>
+                <div id="pravokutnik4" class="pravokutnik" hidden="hidden">
+                    Napišite kratak opis u kojem ćete upisati sve najbitnije značajke vlaka.
+                </div>
+                <label for="opis">Opis: </label>
+                <textarea id="opis" name="opis" placeholder="opis" rows="10" cols="30"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Kontakt informacije</legend>
+                <label for="telefon">Broj telefona</label>
+                <input type="text" name="telefon" id="telefon" placeholder="+385-xx-yyy-zzz"><br>
+                <label for="mail" id="emailLabela">Email adresa</label>
+                <input type="email" id="mail" name="email" size="35" maxlength="35"
+                    placeholder="ime.prezime@posluzitelj.xxx" required="required">
+            </fieldset>
+
+
+
+            <input id="submit1" type="submit" value=" Registriraj se ">
+            <input id="reset1" type="reset" value=" Osvježi obrazac ">
+        </form>
+
+    </section>
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-description">
+            <a
+                href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2020%2Fzadaca_03%2Fssajfar%2Fobrasci%2Fobrazac.html">
+                <img src="../multimedija/HTML5.png" alt="HTML5" width="50" height="50"> </a>
+            <a
+                href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2020%2Fzadaca_03%2Fssajfar%2Fcss%2Fssajfar.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+                <img src="../multimedija/CSS3.png" alt="CSS3" width="50" height="50"> </a>
+            <p>&copy; 2021. <a href="../autor.html">Sanja Šajfar</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

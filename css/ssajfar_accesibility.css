@@ -1,0 +1,61 @@
+body {
+    font-family: 'Arial';
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    word-spacing: 1.5px;
+    line-height: 1.8;
+}
+
+[class|="header"] {
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer-description {
+    color: #000000;;
+    font-size: 25px;
+}
+
+
+.footer {
+    background-color: #ffffff;
+
+
+}
+
+.header__title {
+    font-size: 50px;
+}
+
+.header__nav-item {
+    
+    font-size: 12.33px;
+    
+}
+
+.pravokutnik {
+    background-color: #ffffffb0;
+    height: 150px;
+    width: 300px;
+    text-align: center; 
+}
+
+.labelaNeispravno {
+    color: #000000b0;
+}
+
+
+input[type="submit"], input[type="reset"]{
+    background-color: #ffffff;
+    border-color: #000000c9;
+    color: #0b0c10;
+    width: 130px;
+    height: 30px;
+    
+}
